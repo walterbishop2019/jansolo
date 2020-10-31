@@ -9,6 +9,10 @@
 		<info>https://raw.githubusercontent.com/walterbishop2019/jansolo/master/zips/addons.xml</info>
         <checksum>https://raw.githubusercontent.com/walterbishop2019/jansolo/master/zips/addons.xml.md5</checksum>
         <datadir zip="true">https://raw.githubusercontent.com/walterbishop2019/jansolo/master/zips/</datadir>
+		</dir>
+		<info>https://raw.githubusercontent.com/walterbishop2019/JansoloAuto/master/zips/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/walterbishop2019/JansoloAuto/master/zips/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/walterbishop2019/JansoloAuto/master/zips/</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">julck</summary>
