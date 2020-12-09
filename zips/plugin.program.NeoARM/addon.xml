@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.program.NeoARM" name="[COLOR Lime]matrix[/COLOR] [COLOR white]Wizard[/COLOR]" version="1.1.6" provider-name="[COLOR Lime]matrix[/COLOR]">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="startup.py" start="startup"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">matrix Wizard</summary>
+    <description lang="en">Kodi Builds by matrix.</description>
+    <summary lang="es_ES">matrix Wizard</summary>
+    <description lang="es_ES">Instalador de builds para Kodi.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
