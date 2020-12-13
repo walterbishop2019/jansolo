@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+<addon id="plugin.program.JanMultiPerfil" name="[COLOR limegreen][B][COLOR red]Jan[/COLOR][COLOR cornflowerblue]Solo[/COLOR][COLOR coral]Multi[/COLOR][COLOR green]Perfil[/COLOR][COLOR white]Wizard[/COLOR][/B]" version="1.4.3" provider-name="drinfernoo">
+    <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>executable</provides>
+    </extension>
+
+    <extension point="xbmc.service" library="startup.py" start="startup" />
+
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">[COLOR limegreen][B][COLOR red]Jan[/COLOR][COLOR cornflowerblue]Solo[/COLOR][COLOR coral]Multi[/COLOR][COLOR green]Perfil[/COLOR][COLOR white]Wizard[/COLOR][/B]</summary>
+        <description lang="en">[COLOR limegreen][B][COLOR red]Jan[/COLOR][COLOR cornflowerblue]Solo[/COLOR][COLOR coral]Multi[/COLOR][COLOR green]Perfil[/COLOR][COLOR white]Wizard[/COLOR][/B] offers many maintenance features, selective add-on data saving, and automated build installs.</description>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="plugin.program.JanSoloDual" name="[COLOR limegreen]JANSOLODUAL[/COLOR]Wizard" version="1.4.3" provider-name="drinfernoo">
+    <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>executable</provides>
+    </extension>
+
+    <extension point="xbmc.service" library="startup.py" start="startup" />
+
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">[COLOR limegreen]JANSOLODUAL[/COLOR]Wizard</summary>
+        <description lang="en">[COLOR limegreen]JANSOLODUAL[/COLOR]Wizard [COLOR coral]El kodi de siempre mejorado dual y con muchas mas opciones, recuerda se instala desde backup/guardada seccion Build/pack[/COLOR].</description>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="plugin.video.elementum" name="Elementum" version="777.1.49" provider-name="elgatito">
+    <requires>
+        <import addon="xbmc.addon" version="16.0.0" />
+        <import addon="xbmc.python" version="2.24.0" />
+        <import addon="repository.elementum" optional="true" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="navigation.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="startup" />
+    <extension point="xbmc.python.module" library="resources/site-packages" />
+    <extension point="xbmc.subtitle.module" library="navigation.py" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Elementum: Media streaming</summary>
+        <summary lang="hr">Elementum: Medijsko strujanje</summary>
+         <summary lang="es">Elementum: Transmisión de medios</summary>
+        <description lang="en">Elementum is a torrent finding and streaming engine. It doesn't go on torrent websites for legal reasons. However, it calls specially crafted add-ons (called providers) that are installed separately.[CR]This project is a fork of the well known, but no longer maintained Pulsar/Quasar projects from steeve and scakemyer.</description>
+        <description lang="hr">Elementum je pogon pretraživanja i strujanja. Ne posjećuje torrent web stranice iz pravnih razloga. Ipak, koristi posebno napravljene dodatke (nazvane pružatelji usluge) koji su instalirani odvojeno.[CR]Ovaj projekt je ogranak dobro poznatih, ali više ne održavanih Pulsar/Quasar projekata od autora steevea i scakemyera.</description>
+        <description lang="es">Elementum es un motor de búsqueda y transmisión torrent. No navega por sitios web torrent por razones legales. Sin embargo, llama a complementos especialmente diseñados para ello (denominados providers o proveedores) que se instalan por separado.[CR]Este proyecto es un fork de los bien conocidos, pero ya sin soporte proyectos Pulsar/Quasar de steeve y scakemyer.[CR]</description>
+        <disclaimer lang="en">The author does not own or host any content found within this Addon. The author is not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation.</disclaimer>
+        <disclaimer lang="hr">Autor ovog dodatka ne posjeduje i ne distribuira bilo kakav sadržaj koji je pronađen. Autor nije povezan sa ili na bilo koji drugi način bilo sa Kodijem, Team Kodijem ili XBMC fundacijom.</disclaimer>
+        <disclaimer lang="es">El autor no posee ni aloja ningún contenido que se encuentre a través de este complemento. El autor no está unido ni relacionado de ninguna manera con Kodi, Team Kodi, o XBMC Foundation.</disclaimer>
+        <language>en el es de fi fr he hr it nl pt ro sk</language>
+        <platform>all</platform>
+        <website>http://elementum.surge.sh/</website>
+        <source>https://github.com/elgatito/plugin.video.elementum</source>
+        <forum></forum>
+        <license>Non commercial. See https://github.com/elgatito/plugin.video.elementum/blob/master/LICENSE</license>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.png</fanart>
+            <screenshot>resources/screenshots/home.png</screenshot>
+            <screenshot>resources/screenshots/movies.png</screenshot>
+            <screenshot>resources/screenshots/webui.png</screenshot>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="plugin.video.xbmctorrent" name="XBMCtorrent" version="0.7.9.ru" provider-name="steeve, nightik">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.repository" name="XBMCtorrent (RU) Autoupdate Repository">
+        <info compressed="false">https://afedchin-repo.herokuapp.com/addons.xml</info>
+        <checksum>https://afedchin-repo.herokuapp.com/addons.xml.md5</checksum>
+        <datadir zip="true">https://afedchin-repo.herokuapp.com/</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <source><![CDATA[https://github.com/steeve/xbmctorrent]]></source>
+        <language></language>
+        <license><![CDATA[GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007]]></license>
+        <summary><![CDATA[XBMCtorrent: Torrent streaming for Kodi.]]></summary>
+        <description><![CDATA[Watch torrents directly from Kodi, without waiting.]]></description>
+    </extension>
+</addon>
+
+<addon id="repository.autobuild" name="JansoloAuto repo" version="0.0.1" provider-name="JL">
+	<extension point="xbmc.addon.repository" name="JL Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/</datadir>
+		</dir>
+		<info>https://raw.githubusercontent.com/walterbishop2019/JansoloAuto/master/zips/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/walterbishop2019/JansoloAuto/master/zips/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/walterbishop2019/JansoloAuto/master/zips/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">julck</summary>
+		<description lang="en">julck</description>
+		<genre></genre>
+	</extension>
+</addon>
+
+<addon id="repository.jansolo" name="Jansolo repo" version="0.0.1" provider-name="JL">
+	<extension point="xbmc.addon.repository" name="JL Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/</datadir>
+		</dir>
+		<info>https://raw.githubusercontent.com/walterbishop2019/jansolo/master/zips/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/walterbishop2019/jansolo/master/zips/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/walterbishop2019/jansolo/master/zips/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">julck</summary>
+		<description lang="en">julck</description>
+		<genre></genre>
+	</extension>
+</addon>
+
+<addon id="repository.multijansolo" name="JanSolo repo of repos" version="0.1" provider-name="JanSolo">
+    <extension point="xbmc.addon.repository">
+        <!-- repository.castagnait -->
+        <dir>
+            <info>https://github.com/CastagnaIT/repository.castagnait/raw/master/addons.xml</info>
+            <checksum>https://github.com/CastagnaIT/repository.castagnait/raw/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://github.com/CastagnaIT/repository.castagnait/raw/master/zip</datadir>
+        </dir>
+        <!-- repository.emby.kodi -->
+        <dir>
+            <info compressed="false">https://embydata.com/downloads/addons/xbmb3c/multi-repo/repositories/addons.xml</info>
+            <checksum>https://embydata.com/downloads/addons/xbmb3c/multi-repo/repositories/addons.xml.md5</checksum>
+            <datadir zip="true">https://embydata.com/downloads/addons/xbmb3c/multi-repo/repositories/</datadir>
+        </dir>
+        <dir minversion="18.9.0">
+            <info compressed="false">https://embydata.com/downloads/addons/xbmb3c/multi-repo/matrix/addons.xml</info>
+            <checksum>https://embydata.com/downloads/addons/xbmb3c/multi-repo/matrix/addons.xml.md5</checksum>
+            <datadir zip="true">https://embydata.com/downloads/addons/xbmb3c/multi-repo/matrix/</datadir>
+        </dir>
+        <dir minversion="17.9.0">
+            <info compressed="false">https://embydata.com/downloads/addons/xbmb3c/multi-repo/leia/addons.xml</info>
+            <checksum>https://embydata.com/downloads/addons/xbmb3c/multi-repo/leia/addons.xml.md5</checksum>
+            <datadir zip="true">https://embydata.com/downloads/addons/xbmb3c/multi-repo/leia/</datadir>
+        </dir>
+        <dir minversion="16.9.0">
+            <info compressed="false">https://embydata.com/downloads/addons/xbmb3c/multi-repo/krypton/addons.xml</info>
+            <checksum>https://embydata.com/downloads/addons/xbmb3c/multi-repo/krypton/addons.xml.md5</checksum>
+            <datadir zip="true">https://embydata.com/downloads/addons/xbmb3c/multi-repo/krypton/</datadir>
+        </dir>
+        <!-- repository.plexkodiconnect -->
+        <dir>
+            <info>https://raw.githubusercontent.com/walterbishop2019/jansolo/master/zips/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/walterbishop2019/jansolo/master/zips/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/walterbishop2019/jansolo/master/zips/</datadir>
+        </dir>
+		<dir>
+            <info>https://raw.githubusercontent.com/walterbishop2019/soportejan/master/zips/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/walterbishop2019/soportejan/master/zips/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/walterbishop2019/soportejan/master/zips/</datadir>
+        </dir>
+		<dir>
+            <info>https://raw.githubusercontent.com/walterbishop2019/JansoloAuto/master/zips/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/walterbishop2019/JansoloAuto/master/zips/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/walterbishop2019/JansoloAuto/master/zips/</datadir>
+        </dir>
+		<dir>
+            <info>https://hirayasoftware.github.io/addons.xml</info>
+		<checksum>https://hirayasoftware.github.io/addons.xml.md5</checksum>
+		<datadir zip="true">https://hirayasoftware.github.io/</datadir>
+        </dir>
+		<dir>
+            <info>https://raw.githubusercontent.com/decosub/repo/master/Repositorio/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/decosub/repo/master/Repositorio/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/decosub/repo/master/Repositorio/</datadir>
+        </dir>
+		<dir>
+            <info>https://balandro.tk/repo/addons.xml</info>
+        <checksum>https://balandro.tk/repo/addons.xml.md5</checksum>
+        <datadir zip="true">https://balandro.tk/repo</datadir>
+        </dir>
+		<dir>
+            <info>https://raw.githubusercontent.com/walterbishop2019/walterbishop/master/zips/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/walterbishop2019/walterbishop/master/zips/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/walterbishop2019/walterbishop/master/zips/</datadir>
+        </dir>
+		<dir>
+            <info>https://raw.githubusercontent.com/Andorth/Repo/master/repositorio/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/Andorth/Repo/master/repositorio/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/Andorth/Repo/master/repositorio/</datadir>
+        </dir>
+		<dir>
+            <info compressed="false">https://raw.github.com/Maniac2017/repository.Maniac/master/addons.xml</info>
+		<checksum>https://raw.github.com/Maniac2017/repository.Maniac/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.github.com/Maniac2017/repository.Maniac/master/repor/</datadir>
+        </dir>
+		<dir>
+            <info compressed="false">https://kodibalkan.com/robinhoodtvpro/programi/addons.xml</info>
+		<checksum>https://kodibalkan.com/robinhoodtvpro/programi/addons.xml.md5</checksum>
+		<datadir zip="true">https://kodibalkan.com/robinhoodtvpro/programi/</datadir>
+        </dir>
+		<dir>
+            <info>https://github.com/alfa-addon/alfa-repo/raw/master/addons.xml</info>
+        <checksum>https://github.com/alfa-addon/alfa-repo/raw/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://github.com/alfa-addon/alfa-repo/raw/master</datadir>
+        </dir>
+		<dir>
+            <info>https://raw.githubusercontent.com/Palantiraddon/Repo/master/Palantir/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/Palantiraddon/Repo/master/Palantir/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/Palantiraddon/repo/master/Palantir/</datadir>
+        </dir>
+
+		<dir>
+            <info compressed="false">https://raw.githubusercontent.com/stvabuild/Repo-STVA/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/stvabuild/Repo-STVA/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/stvabuild/Repo-STVA/master</datadir>
+        </dir>
+		<dir>
+            <info compressed="false">http://raw.github.com/afonsinoguimaraes/repository.magellan/master/addons.xml</info>
+		<checksum>http://raw.github.com/afonsinoguimaraes/repository.magellan/master/addons.xml.md5</checksum>
+		<datadir zip="true">http://raw.github.com/afonsinoguimaraes/repository.magellan/master/repo/</datadir>
+        </dir>
+		<dir>
+            <info compressed="false">https://k.slyguy.xyz/.repo/addons.xml</info>
+         <checksum>https://k.slyguy.xyz/.repo/addons.xml.md5</checksum>
+         <datadir zip="true">https://k.slyguy.xyz/.repo/</datadir>
+        </dir>
+		<dir>
+            <info>https://raw.githubusercontent.com/picapaujulen/repositorio/master/Repositorio/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/picapaujulen/repositorio/master/Repositorio/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/picapaujulen/repositorio/master/Repositorio/</datadir>
+        </dir>
+		<dir>
+            <info compressed="false">https://raw.githubusercontent.com/mbebe/blomqvist/master/zips/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/mbebe/blomqvist/master/zips/addons.xml.md5</checksum>
+		<datadir zip="true">https://github.com/mbebe/blomqvist/raw/master/zips</datadir>
+        </dir>
+		<dir>
+            <info compressed="false">https://kodibalkan.com/robinhoodtvpro/programi/addons.xml</info>
+		<checksum>https://kodibalkan.com/robinhoodtvpro/programi/addons.xml.md5</checksum>
+		<datadir zip="true">https://kodibalkan.com/robinhoodtvpro/programi/</datadir>
+        </dir>
+		<dir>
+            <info>https://github.com/alfa-addon/alfa-repo/raw/master/addons.xml</info>
+        <checksum>https://github.com/alfa-addon/alfa-repo/raw/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://github.com/alfa-addon/alfa-repo/raw/master</datadir>
+        </dir>
+		<dir>
+            <info>https://raw.githubusercontent.com/Palantiraddon/Repo/master/Palantir/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/Palantiraddon/Repo/master/Palantir/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/Palantiraddon/repo/master/Palantir/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Repository of repositories</summary>
+        <description>foobar</description>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="repository.soportejan" name="soportejan repo" version="0.0.1" provider-name="JL">
+	<extension point="xbmc.addon.repository" name="JL Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/</datadir>
+		</dir>
+		<info>https://raw.githubusercontent.com/walterbishop2019/soportejan/master/zips/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/walterbishop2019/soportejan/master/zips/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/walterbishop2019/soportejan/master/zips/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">julck</summary>
+		<description lang="en">julck</description>
+		<genre></genre>
+	</extension>
+</addon>
+
+<addon id="repository.walterbishop" name="walterbishop repo" version="0.0.1" provider-name="WB">
+	<extension point="xbmc.addon.repository" name="JL Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/</datadir>
+		</dir>
+		<info>https://raw.githubusercontent.com/walterbishop2019/walterbishop/master/zips/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/walterbishop2019/walterbishop/master/zips/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/walterbishop2019/walterbishop/master/zips/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">WB</summary>
+		<description lang="en">WB</description>
+		<genre></genre>
+	</extension>
+</addon>
+
+<addon id="skin.eminence.2" name="Eminence" provider-name="jurialmunkey" version="99.0.4">
+    <requires>
+        <import addon="xbmc.gui" version="5.14.0" />
+        <import addon="script.skinshortcuts" version="1.0.0" />
+        <import addon="script.skin.helper.service" version="1.0.0" />
+        <import addon="script.extendedinfo" version="5.0.0" />
+        <import addon="script.image.resource.select" version="0.0.5" />
+        <import addon="plugin.program.autocompletion" version="1.0.1" />
+        <import addon="resource.images.weathericons.white" version="0.0.6" />
+    </requires>
+    <extension debugging="false" effectslowdown="1.00" point="xbmc.gui.skin">
+        <res aspect="16:9" default="true" folder="16x9" height="1080" width="1920" />
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en_GB">Clean, clear, simple, modern.</summary>
+        <summary lang="it_IT">Pulita, chiara, semplice, moderna.</summary>
+        <disclaimer lang="en_GB">Mouse and Touch device not supported</disclaimer>
+        <disclaimer lang="it_IT">Mouse e dispositivi touch non sono supportati</disclaimer>
+        <description lang="en_GB">Eminence is a skin that aims to be clean, clear, simple and modern.</description>
+        <description lang="it_IT">Eminence è una skin che mira ad essere pulita, chiara, semplice e moderna.</description>
+        <license>CC-NC-SA 3.0</license>
+        <website />
+        <email />
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+            <screenshot>extras/viewthumbs/50.jpg</screenshot>
+            <screenshot>extras/viewthumbs/51.jpg</screenshot>
+            <screenshot>extras/viewthumbs/52.jpg</screenshot>
+            <screenshot>extras/viewthumbs/53.jpg</screenshot>
+            <screenshot>extras/viewthumbs/54.jpg</screenshot>
+            <screenshot>extras/viewthumbs/55.jpg</screenshot>
+            <screenshot>extras/viewthumbs/56.jpg</screenshot>
+            <screenshot>extras/viewthumbs/57.jpg</screenshot>
+            <screenshot>extras/viewthumbs/58.jpg</screenshot>
+            <screenshot>extras/viewthumbs/59.jpg</screenshot>
+        </assets>
+    </extension>
+</addon>
+</addons>
